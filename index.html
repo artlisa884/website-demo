@@ -24,7 +24,6 @@
         
         <section class="menu-category">
             <h2 class="category-title">Signature Cakes</h2>
-            
             <div class="menu-grid">
                 <div class="menu-item">
                     <div class="item-image-wrapper">
@@ -56,7 +55,6 @@
 
         <section class="menu-category">
             <h2 class="category-title">Artisanal Pastries</h2>
-            
             <div class="menu-grid">
                 <div class="menu-item">
                     <div class="item-image-wrapper">
@@ -88,7 +86,6 @@
 
         <section class="menu-category">
             <h2 class="category-title">Blossom Drinks</h2>
-            
             <div class="menu-grid">
                 <div class="menu-item">
                     <div class="item-image-wrapper">
@@ -118,23 +115,39 @@
             </div>
         </section>
 
+        <section class="socials-section">
+            <div class="bar-socials">
+                <h4>Join Our Community</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/SweetBlissBar" target="_blank" class="social-btn instagram">📸 Instagram</a>
+                    <a href="https://tiktok.com/@SweetBlissBar" target="_blank" class="social-btn tiktok">🎵 TikTok</a>
+                </div>
+            </div>
+
+            <div class="creator-credits">
+                <p class="allergy-notice">Please inform our staff of any allergies before ordering.</p>
+                <div class="dev-tag">Website created by:</div>
+                <div class="creator-links">
+                    <a href="tel:+251912345678" class="creator-btn phone">📞 Call Developer</a>
+                    <a href="https://t.me/your_telegram" target="_blank" class="creator-btn telegram">✈️ Telegram</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="menu-footer">
-         <p>Please inform our staff of any allergies before ordering.</p>
-        <p class="social">✨ Instagram & TikTok: @SweetBlissBar ✨</p>
-         <p style="margin-top:5px; font-size:0.7rem; opacity:0.7;">Dev: +251912345678 | t.me/your_telegram</p>
+        <p>&copy; 2026 Sweet Bliss Dessert Bar. All Rights Reserved.</p>
     </footer>
-<script>
+
+    <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('Menu cached successfully for offline use!', reg.scope))
-                    .catch(err => console.log('Service Worker failed:', err));
+                    .then(reg => console.log('Menu successfully compiled for offline support!', reg.scope))
+                    .catch(err => console.log('Service worker registration halted:', err));
             });
         }
     </script>
-</body>
-</html>
 </body>
 </html>

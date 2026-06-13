@@ -24,11 +24,12 @@ body {
 }
 
 /* --- HERO HEADER (With Background Image) --- */
+/* --- HERO HEADER (With Background Image) --- */
 .menu-header {
     position: relative;
-    height: 50vh; /* Scaled down slightly to look balanced on both mobile and desktop screens */
+    height: 50vh; 
     min-height: 350px;
-    background-image: url('C:\\Users\\marta\\Desktop\\project 1\\bg.jpg'); 
+    background-image: url('bg.jpg'); /* Fixed to use relative path */
     background-size: cover;
     background-position: center;
     background-attachment: scroll;

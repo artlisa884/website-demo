@@ -1,17 +1,17 @@
 const CACHE_NAME = 'sweet-bliss-menu-v1';
 
-// List of all the files you want the phone to remember offline
+// The exact list of files your phone will save for 100% offline use
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
     './style.css',
-    './images/hero-bg.jpg',
-    './images/cake-rose.jpg',
-    './images/cake-chiffon.jpg',
-    './images/pastry-macaron.jpg',
-    './images/pastry-cube.jpg',
-    './images/drink-matcha.jpg',
-    './images/drink-lemonade.jpg'
+    './bg.jpg',
+    './cr.jpg',
+    './cc.jpg',
+    './pm.jpg',
+    './pc.jpg',
+    './dm.jpg',
+    './dl.jpg'
 ];
 
 // Step 1: Install the Service Worker and Cache all assets
@@ -25,7 +25,7 @@ self.addEventListener('install', (event) => {
     self.skipWaiting();
 });
 
-// Step 2: Activate and clear old caches if you update the menu later
+// Step 2: Activate and clear old caches if you update prices/items later
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
