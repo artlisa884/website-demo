@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bliss | Luxury Dessert Bar Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="menu-header">
+        <div class="header-content">
+            <span class="subtitle">Welcome to Sweet Bliss</span>
+            <h1>Dessert Bar</h1>
+            <div class="accent-line"></div>
+            <p class="tagline">Handcrafted moments of pure sweetness</p>
+        </div>
+    </header>
+
+    <main class="menu-container">
+        
+        <section class="menu-category">
+            <h2 class="category-title">Signature Cakes</h2>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="cr.jpg" alt="Rose Petal Velvet Cake" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Rose Petal Velvet</h3>
+                            <span class="item-price">$8.50</span>
+                        </div>
+                        <p class="item-description">Light buttercream cake layered with organic rosewater cream cheese frosting and edible gold flakes.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="cc.jpg" alt="Raspberry Chiffon" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Raspberry Chiffon</h3>
+                            <span class="item-price">$9.00</span>
+                        </div>
+                        <p class="item-description">Fluffy vanilla sponge filled with fresh raspberry coulis and coated in a white chocolate blush glaze.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2 class="category-title">Artisanal Pastries</h2>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="pm.jpg" alt="Pink Blush Macaron Trio" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Pink Blush Macaron Trio</h3>
+                            <span class="item-price">$7.50</span>
+                        </div>
+                        <p class="item-description">Three delicate shells filled with strawberry ganache, salted caramel, and vanilla bean buttercream.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="pc.jpg" alt="Strawberry Croissant Cube" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Strawberry Croissant Cube</h3>
+                            <span class="item-price">$6.50</span>
+                        </div>
+                        <p class="item-description">Flaky, crispy pastry cube filled with fresh house-made strawberry custard and dusted with pink sugar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2 class="category-title">Blossom Drinks</h2>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="dm.jpg" alt="Pink Dragon Matcha" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Pink Dragon Matcha</h3>
+                            <span class="item-price">$5.50</span>
+                        </div>
+                        <p class="item-description">Premium ceremonial matcha layered beautifully over sweetened pitaya (dragonfruit) oat milk.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-wrapper">
+                        <img src="dl.jpg" alt="Rosewater Lemonade" class="item-image" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-name">Rosewater Lemonade</h3>
+                            <span class="item-price">$4.75</span>
+                        </div>
+                        <p class="item-description">Freshly squeezed lemons infused with pure Bulgarian rosewater, served ice cold with dried rosebuds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="menu-footer">
+         <p>Please inform our staff of any allergies before ordering.</p>
+        <p class="social">✨ Instagram & TikTok: @SweetBlissBar ✨</p>
+         <p style="margin-top:5px; font-size:0.7rem; opacity:0.7;">Dev: +251912345678 | t.me/your_telegram</p>
+    </footer>
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Menu cached successfully for offline use!', reg.scope))
+                    .catch(err => console.log('Service Worker failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
